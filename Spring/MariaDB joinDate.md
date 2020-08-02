@@ -4,10 +4,13 @@
 
   dto에 String 변수 joinDate 생성. 
 
-![image-20200802160350285](C:\TIL\SpringSettings\image-20200802160350285.png)
+![image-20200802160350285](https://user-images.githubusercontent.com/67783005/89118361-2236c900-d4e0-11ea-99db-72c53b5e2a3c.png)
 
 - NOW()함수 SQL쿼리문에 넣어주기 
-  ![image-20200802160541035](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200802160541035.png)
+  
+![image-20200802160541035](https://user-images.githubusercontent.com/67783005/89118377-472b3c00-d4e0-11ea-8c0d-375e1ec427d0.png)
+
+
 
   joinDate는 클라이언트로부터 입력 받는 것이 아니기 때문에 쿼리문에 함수를 직접 넣어준다.
   HeidiSQL에서는 위에 사진처럼 now()를 쿼리문에 넣어서  데이터가 삽입 되었는데
