@@ -9,7 +9,7 @@
      SqlSession , nameSpace 생성
      sqlSession.insert(nameSpace + "productInsert", paramProductDto) 
      SQL.xml 파일에 파라미터값 전달.
-     ![image-20200726191955615](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200726191955615.png)
+    ![image-20200726191955615](https://user-images.githubusercontent.com/67783005/89118328-d4ba5c00-d4df-11ea-81bb-96b7c5485a32.png)  
   3. ProductSQL.xml에서 쿼리문 작성
      mapper namespace와 insert id 생성 후 그 안에 insert 쿼리문 작성하기.
   4. Controller에서 기능 호출
