@@ -11,6 +11,7 @@
      SQL세션 생성 : private SqlSession sqlSession; 
      오류를 줄이기 위한 nameSpace String 변수 생성 : private String nameSpace = "Product."; 
 
+     ![image-20200726204907778](https://user-images.githubusercontent.com/67783005/89118232-d8011800-d4de-11ea-941c-3f4a8340b77d.png)
      ![image-20200726204907778](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200726204907778.png)
      ![image-20200726204929751](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200726204929751.png)
 
