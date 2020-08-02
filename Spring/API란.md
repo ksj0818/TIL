@@ -2,7 +2,8 @@
 
 - API (Application Programming Interface) 어떠한 응용프로그램에서 데이터를 주고 받기 위한 방법을 의미함.
 
-![image-20200801160531714](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200801160531714.png)
+![image-20200801160531714](https://user-images.githubusercontent.com/67783005/89118574-9756ce00-d4e1-11ea-8f89-e41a35feb1fb.png)
+
 
 - API를 본격적으로 알아보기 전에, 비유를 들어 쉽게 설명을 도와드리겠습니다. 여러분이 멋진 레스토랑에 있다고 가정해봅시다. 점원이 가져다준 메뉴판을 보면서 먹음직스러운 스테이크를 고르면, 점원이 주문을 받아 요리사에 요청을 할 텐데요. 그러면 요리사는 정성껏 스테이크를 만들어 점원에게 주고, 여러분은 점원이 가져다준 맛있는 음식을 먹을 수 있게 됩니다.
 
