@@ -9,7 +9,7 @@ spring.mvc.view.prefix: /WEB-INF/  //suffix: .jsp
 						.connection-timeout: 30000
 ~~~
 
-![](C:\Users\toffp\AppData\Roaming\Typora\typora-user-images\image-20200726025304005.png)
+![image-20200726025304005](https://user-images.githubusercontent.com/67783005/89118419-ab4e0000-d4e0-11ea-8288-b373fada4c7c.png)
 
 application.properties 파일 복사해서 application.yaml파일 생성 후 properties 파일은 삭제.
 spring.mvc.view.prefix,suffix에 설정값 넣기
