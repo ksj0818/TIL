@@ -53,3 +53,14 @@ public class DataSourceConfiguration {
 }
 ~~~
 
+##   
+
+
+
+ *** @Bean : 스프링에 필요한 객체를 생성**
+
+ *** sqlSessionFactory() : MyBatis의 SqlSessionFactory를 반환해줍니다. 스프링부트가 실행할 때 DataSource객체를 이 메서드 실행 시 주입해서 결과를 만들고, 그 결과를 스프링내 빈으로 사용하게 됩니다.** 
+
+
+
+출처: https://private.tistory.com/52?category=753861 [공부해서 남 주자]
