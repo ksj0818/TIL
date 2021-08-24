@@ -1,6 +1,6 @@
 'use strict';
 
-// Variable(변수) : 변경될 수 있는 값을 말함.
+// Variable(변수) : 변경될 수 있는 값을 말함. , rw (read/write) variable은 메모리에 읽고 쓰기가 가능함
 // let (added in ES6)
 // 값이 계속 변경 될 수 있는 것을 Mutable 데이터 타입이라고 함
 let globalName = 'global name'; 
@@ -24,7 +24,7 @@ age = 4; // 변수 선언도 하기 전에 사용가능...
 var age;  
 
 /**
- * constants (상수) , Immutable 데이터 타입
+ * constant(상수) , Immutable 데이터 타입, const는 r (read only) 메모리 읽기만 가능
  * 한 번 할당하면 값이 절대 바뀌지 않음
  * 값을 가리키고 있는 포인터가 잠겨 있음. (값 수정 불가)
  * favor immutable data type always for a few  reasons:  (값을 할당한 다음에 다시는 값이 변경 되지 않는 데이터 타입을 사용해라)
@@ -34,6 +34,12 @@ var age;
  * 이 thread들이 변수에 동시에 접근하여 값을 변경할 수가 있는데 이게 위험함. 그렇기 때문에 
  * 가능하면 값이 변하지 않는 것을 사용하는게 좋다
  * - reduce human mistakes : 나중에 코드를 변경하거나 다른 개발자가 코드를 수정할 때도 실수를 방자할 수 있음.
+ * 
+ * Immutable data types: primitive types, frozon objects (i.e. object.freeze())
+ *  통째로 메모리에 올렸다가 다른 스트링으로 변경이 가능하지, 데이터 자체를 변경하는건 불가능
+ * Mutable data types: all object by default are mutable in JS 
+ *  오브젝트는 계속 스스로 변경이 가능함, 
+ *  자바스크립트에서는 기본적으로 모든 오브젝트는 변경이 가능
  */
 
 const daysInWeek = 7;
@@ -43,9 +49,13 @@ console.log('daysInWeek = ', daysInWeek + ', maxNumber =', maxNumber);
 /**
  * variable types (primitive, object 두 가지 타입으로 나뉘어져 있음)
  * primivtive, single item : number, string, boolean, null, undefiend, symbol
- * 더 이상 작은 단위로 나뉘어질 수 없는 한 가지의 아이템을 말함
+ * 더 이상 작은 단위로 나뉘어질 수 없는 한 가지의 아이템을 말함, 
+ * value(값) 자체가 메모리에 저장됨
  * object, box container
- * 싱글 아이템들을 여러 개 묶어서 한 단위로, 한 박스로 관리 할 수 있게 해주는 것
+ * 싱글 아이템들을 여러 개 묶어서 한 단위로, 한 박스로 관리 할 수 있게 해주는 것, 
+ * 너무 커서 메모리에 한 번에 다 올라갈 수가 없음, const 상수를 할당하게 되면 
+ * 상수가 가리키는 곳에 reference가 존재 이 레퍼런스가 실제로 오브젝트를 가르키고 있는 곳임,
+ * 이 레퍼런스를 통해서 실제로 오브젝트가 담겨 있는 메모리를 가르키게 됨
  * function도 자바스크립트에서 데이터 타입중 하나임
  * first-class function : 이 프로그래밍 언어에서는 펑션도 다른 데이터 타입처럼 변수에 할당이 가능하고
  * 또 그렇기 때문에 함수의 파라미터 (인자)로도 전달이 되고 함수에서 리턴 타입으로도 펑션을 리턴 할 수 있는 것이 가능
