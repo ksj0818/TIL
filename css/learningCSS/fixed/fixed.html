@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+   position: fixed => 초기 위치에 고정시켜줌. 다른 레이어 상에서 자리잡음.
+   position: relative는 element를 사용할 수 있음 
+   top, right, bottom, left => margin과 초기 위치 등이 무시되고 명령한 위치에 자리잡음
+   position: absolute는 가장 가까운 relative 부모를 기준으로 이동시켜줌
+-->
+<html lang="en">
+    <head>
+        <title>fixed</title>
+        <style>
+            body{
+                height: 1000vh;
+            }
+            div {
+                width: 300px;
+                height: 300px;
+            }
+            #green {
+                background-color: green;
+            }
+            #different {
+                background-color: wheat;
+                position: fixed;
+                opacity: 0.2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="green"></div>
+        <div id="different"></div>
+    </body>
+</html>
