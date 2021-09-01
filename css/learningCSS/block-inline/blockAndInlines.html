@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+            div, header, footer등 box 형태는 옆에 요소를 허용하지 않음. 
+            box를 block 이라고 함 
+            
+            a, span, img 등 옆에 요소를 허용하는 것을
+            inline 이라고 함.
+
+            어떤 요소가 inline이면
+            그 요소는 높이와 너비를 가질 수 없다.
+            반면 block은 높이와 너비를 가질 수 있다.
+        -->
+        <title>block and inlines!</title>
+        <style>
+            div {
+                display: inline;
+                background-color: tomato;
+                height: 150px;
+                width: 150px;
+            }
+            
+            span {
+                background-color: teal;
+            }
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+
+            span {
+                /* inline을 block으로 변경 하는 방법
+                   span은 초기에 display: inline임.                   
+                */
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>block1</div>
+        <div>block2</div>
+        <div>block3</div>
+        <a href="#">link</a>
+        <span style="display: inline;">inline</span>
+        <img src="../img/logo.jpg">
+        <span>inline</span>
+        <span>inline</span>
+    </body>
+</html>
