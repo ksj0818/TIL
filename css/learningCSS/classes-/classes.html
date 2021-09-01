@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>classes</title>
+        <style>
+            .teal {
+                background-color: teal;
+            }
+            .tomato {
+                background-color: tomato;
+            }
+            .btn {
+                border-radius: 5px;
+                margin: 10px;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+            }
+            body {
+                margin: 40px;
+                border: 2px solid black;
+                padding: 40px ;
+            }
+            html {
+                border: 3px dashed gray;
+            }
+        </style>
+    </head>
+    <!-- 한 요소에서 클래스는 여러 개 불러올 수 있다.-->
+    <body>
+        <!-- span은 inline이기 때문에 높이와 너비를 가질 수 없다-->
+        <span class="btn teal">Helle</span>
+        <span class="btn tomato">Hello</span>
+        <span class="btn teal">Helle</span>
+        <span class="btn tomato">Hello</span>
+        <span class="btn teal">Helle</span>
+        <span class="btn tomato">Hello</span>
+        <!-- div는 block이기 때문에 높이와 너비를 가질 수 있다.-->
+        <div class="btn teal">hello</div>
+        <div class="btn tomato">hello</div>
+        <div class="btn teal">hello</div>
+        <div class="btn tomato">hello</div>
+        <div class="btn teal">hello</div>
+        <div class="btn tomato">hello</div>
+    </body>
+</html>
