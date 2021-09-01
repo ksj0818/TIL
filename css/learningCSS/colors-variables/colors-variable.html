@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            CSS에서 알아야할 컬러 시스템은 3가지 정도 있음
+            1. hexadecimal color (16진수) 
+            2. RGB
+            3. RGBA 
+        -->
+        <title>colors - variables</title>
+        <style>
+            :root { /*root는 기본적으로 모든 document의 뿌리가 됨*/
+                --main-color: #fcce00;  /* --main-color를 document의 root에 저장, 변수는 dash 2개 다음에 dash 1개 그리고 변수 이름으로 지어야함*/
+                --default-border: 1px solid var(--main-color);
+            }
+            body {
+                height: 100vh;
+                margin: 50px;
+            }
+            p {
+                /*
+                color: #FCCE00; 
+                color: rgb(252, 252, 0);
+                color: rgba(252, 252, 0, 0.5);  /*0.5로 하면 50%의 opacity를 가짐*/
+                background-color: var(--main-color);    /*변수를 사용할 때 var(...)쓰면 됨*/
+            }
+            a {
+                color: var(--main-color);
+                border: var(--default-border);
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello</p>
+        <a href="https://apple.com">Go to apple</a>
+    </body>
+</html>
