@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>states</title>
+        <style>
+            /*
+                states 
+                active: 클릭 중일때
+                hover : 마우스를 올려 놓았을 때
+                focus : 키보드로 올려 놓았을 때
+                vbisited : 링크를 방문 했을 때
+                focus-within : focused인 자식을 가진 부모 엘리먼트에 적용
+            */
+            form {
+                display: flex;
+                flex-direction: column;
+                border: 3px solid thistle;
+                padding: 20px;
+            } 
+            form:focus-within {
+                border: 3px solid seagreen;
+            }
+            form:hover input:focus{  /* 정말 많이 씀 연습 많이 하기 */
+                background-color: sienna;
+            }
+            a:visited {
+                color: tomato;
+            }
+            a:hover {
+                color: teal;
+            }
+            a:focus {
+                color: violet;
+            }
+            input:focus {
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+        </form> <br><br><br>
+        <a href="http://apple.com">Go to apple</a>
+        <input type="text" />
+        <input type="text" />
+    </body>
+</html>
