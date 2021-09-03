@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.square {
+  width: 48%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.square:first-child .square_bg {
+  background-color: tomato;
+}
+
+.square:nth-child(2) .square_bg {
+  background-color: teal;
+}
+
+.square:nth-child(3) .square_bg {
+  background-color: burlywood;
+}
+
+.square:nth-child(4) .square_bg {
+  background-color: thistle;
+}
+
+.square_bg {
+  height: 300px;
+  border: 5px solid white;
+}
+
+.square_info {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
