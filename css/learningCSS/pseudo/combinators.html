@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>combinators</title>
+        <style>
+            span {
+                background-color: yellowgreen;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            p span { /* 부모를 먼저 쓰고 자식을 씀*/
+                color: white;
+            }
+            div > span { /* div > p div의 바로 밑 첫 번째 자식, +는 형제 */ 
+                text-decoration: underline;
+            }
+            /*
+            p + span { p 바로 뒤에 와야함
+                text-decoration: underline;
+            }
+            */
+            p ~ span {  /* ~ 는 형제와 형제 관계 꼭 바로 뒤에 올 필요가 없음*/
+                font-size: 50px;
+            }
+            input:optional {
+                border: 3px solid wheat;
+            }
+            input:required {
+                border-color: tomato;
+            }
+            input[placeholder~="name"] {    /* ~= 는 "name"을 포함하고 있다 이런 의미임*/
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input type="text" placeholder="First name" />
+                <input type="text" placeholder="Last name" />
+                <input type="password" required placeholder="password" />
+            </form>
+            <!-- 
+            <p>
+                sdjhfkjsadhfkjhsdakjfhlkasfsdafksj...
+                <span>inside</span>
+            </p>
+            <span>hello</span>
+            -->
+        </div>
+    </body>
+</html>
