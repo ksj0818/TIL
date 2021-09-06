@@ -43,8 +43,9 @@ console.log(10 >= 6); // true
 const value1 = false;
 const value2 = 4 < 2;
 
-// || (or)
+// || (or) 처음으로 true가 나오면  뒤에 값이 무엇이던 true임 심플한 조건부터 앞으로
 console.log(`or: ${value1 || value2 || check()}`) // 3가지 중 하나라도 참이면 참이됨
+
 function check() { 
   for (let i = 0; i < 10; i ++) {
     //wasting time
@@ -52,3 +53,51 @@ function check() {
   }
   return true;
 }
+
+// && 모든 값이 참이여야 참
+console.log(`and: ${value1 && value2 && check()} `)
+
+// not 값을 반대로 바꿈
+console.log(!value1);
+
+// 7. Equality 
+
+const stringFive = '5';
+const numberFive = 5;
+
+// == loose equality, with type conversion 타입을 변경해서 검사를 함
+console.log(stringFive == numberFive);
+console.log(stringFive != numberFive);
+
+
+// === strict equality, no type conversion 타입을 변경하지 않고 검사, 타입이 다르면 다른 것임
+console.log(stringFive === numberFive);
+console.log(stringFive !== numberFive);
+
+// object equality by reference 오브젝트는 메모리에 탑재될 때 레퍼런스 형태로 저장
+const hong1 = {name: 'hong'};
+const hong2 = {name: 'hong'};
+const hong3 = hong1;
+console.log(hong1 == hong2);    // false
+console.log(hong1 === hong2);   // false
+console.log(hong1 === hong3);   // true
+
+// equlity - puzzler
+console.log(0 == false);  // true
+console.log(0 === false); // false
+console.log('' == false); // true
+console.log('' === false);  // false
+console.log(null == undefined); // true
+console.log(null === undefined);  // false
+
+
+
+
+
+
+
+
+
+
+
+
