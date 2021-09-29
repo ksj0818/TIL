@@ -24,7 +24,7 @@ class Person {
 
   // method 
   speak() {
-    console.log(`${this.name}: Hello!`); // this라는 것은 생성된 오브젝트 .(dot)name라고 하기때문에 goGilDong의 이름이 출력
+    console.log(`${this.name}: Hello!!!!`); // this라는 것은 생성된 오브젝트 .(dot)name라고 하기때문에 goGilDong의 이름이 출력
   }
 }
 
