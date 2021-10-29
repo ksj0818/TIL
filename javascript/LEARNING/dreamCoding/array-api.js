@@ -61,3 +61,8 @@ console.log(average / students.length);
 console.log(score.toString());
 
 // Bonus! '45, 66, 80, 88, 90' 낮은 점수가 제일 먼저 나오게해서 string으로 나오게 하기
+const result = students
+  .map((student) => student.score)
+  .sort((a, b) => a - b)
+  .join(", ")
+console.log(result);
