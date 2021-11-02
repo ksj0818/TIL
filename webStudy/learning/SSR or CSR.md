@@ -12,7 +12,7 @@
 
 ## 1. SSR, CSR이란 무엇인가? feat.동작원리
 
-![image-20211028091542099](C:\Users\DevTeam\AppData\Roaming\Typora\typora-user-images\image-20211028091542099.png)
+![image-20211028091542099](https://user-images.githubusercontent.com/88412911/139625653-3313793e-ff5d-4b7e-87d6-227fe0401b59.png)
 
 **많은 웹사이트들은 페이지를 이동할 때마다 서버에 새로운 페이지에 대한 요청을 하는 방식을 택하고 있다. 이 방식이 ==SSR(Server Side Rendering)==이다.**
 서버에서 렌더링을 마치고, Data가 결합된 HTML파일을 내려주는 방식이다.
@@ -22,8 +22,7 @@
 
 
 
-![image-20211028092248910](C:\Users\DevTeam\AppData\Roaming\Typora\typora-user-images\image-20211028092248910.png)
-
+![image-20211028092248910](https://user-images.githubusercontent.com/88412911/139625689-5ed05aeb-2b7f-43c6-846e-ab428e0bf3d7.png)
 
 
 *SPA(Single Page Application) 기법이 대두 되면서 `CSR` 방식이 각광받기 시작했다.
