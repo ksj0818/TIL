@@ -4,21 +4,21 @@
 // 호이스팅된 이후부터 코드가 순서대로 동기적으로 실행
 // hoisting: var, function declaration 선언들이 자동적으로 최상위로 올라가는 것
 console.log("1");
-setTimeout(function () {
+setTimeout(() => {
   // 브라우저 API라서 브라우저에게 요청함
   console.log("2");
 }, 2000);
 console.log("3");
 
 // 콜백도 2가지로 나뉨
-// Synchronous callback
+// Synchronous callback (즉각적,동기적으로 실행)
+// 인자값에 콜백 함수가 들어있음
 function printImmediately(print) {
-  // 인자값에 콜백 함수가 들어있음
   print(); // 인자 값에 들어있는 콜백함수 호출
 }
 printImmediately(() => console.log("hello print")); // 콜백함수를 인자로 넘기기
 
-// Asynchronous callback
+// Asynchronous callback (언제 실행될 지 예측할 수 없는 콜백)
 function printWithDelay(print, timeout) {
   console.log(print + timeout);
   setTimeout(print, timeout);
