@@ -28,18 +28,19 @@ async function getBanana() {
   return "🍌";
 }
 
-async function pickFruits() {
-  const applePromise = getApple();
-  const bananaPromise = getBanana();
-  const apple = await applePromise;
-  const banana = await bananaPromise;
-  return `${apple} + ${banana}`;
-}
+// async function pickFruits() {
+//   const applePromise = getApple();
+//   const bananaPromise = getBanana();
+//   const apple = await applePromise;
+//   const banana = await bananaPromise;
+//   return `${apple} + ${banana}`;
+// }
 
-pickFruits().then(console.log);
+// pickFruits().then(console.log);
 
 // 3. useful APIs ✨
 function pickAllFruits() {
+  // Promise.all()는 프로미스 배열을 전달하게 되면 모든 프로미스들이 병렬적으로 다 받을때까지 모아주는 함수
   return Promise.all([getApple(), getBanana()]).then((fruits) =>
     fruits.join(" + ")
   );
